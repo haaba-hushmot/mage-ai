@@ -16,7 +16,7 @@ RUN jupyter-kernelspec install --user $(pip show sparkmagic | grep Location | cu
 
 EXPOSE 6789
 
-ENV PYTHONPATH="${PYTHONPATH}:/home/src"
+ENV PYTHONPATH="${PYTHONPATH}:/home/src11"
 WORKDIR /home/src
 
 CMD mage start default_repo
